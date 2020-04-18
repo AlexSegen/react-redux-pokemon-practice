@@ -8,7 +8,7 @@ const initialState = {
 
 
 const buscador = (state = initialState, action) => {
-    switch (action) {
+    switch (action.type) {
         case FETCH_POKEMON_REQUEST:
             return {
                 ...state,
@@ -16,12 +16,14 @@ const buscador = (state = initialState, action) => {
             }
         case FETCH_POKEMON_SUCCESS:
             return {
+                ...state,
                 loading: false,
                 pokemon: action.payload,
                 error: ''
             }
         case FETCH_POKEMON_FAILURE:
             return {
+                ...state,
                 loading: false,
                 pokemon: [],
                 error: action.payload

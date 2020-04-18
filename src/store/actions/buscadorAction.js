@@ -13,7 +13,7 @@ export const fetchPokemonRequest = () => {
 export const fetchPokemonSuccess = (pokemon) => {
   return {
     type: FETCH_POKEMON_SUCCESS,
-    payload: pokemon,
+    payload: pokemon
   };
 };
 

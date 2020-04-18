@@ -36,13 +36,13 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-sm-12">
-          <p>Buscador Pokemon</p>
-          <BuscadorPokemon/>
-        </div>
-        <div className="col-sm-12">
-            <ResultadoPokemon/>
+          <div className="col-sm-12">
+            <p>Buscador Pokemon</p>
+            <BuscadorPokemon/>
+          </div>
+          <div className="col-sm-12">
+              <ResultadoPokemon/>
+          </div>
         </div>
       </div>
     </Provider>

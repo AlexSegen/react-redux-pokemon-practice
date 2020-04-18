@@ -6,6 +6,7 @@ const initialState = {
     error: ''
 }
 
+
 const buscador = (state = initialState, action) => {
     switch (action) {
         case FETCH_POKEMON_REQUEST:

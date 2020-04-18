@@ -18,7 +18,7 @@ const ResultadoPokemon = () => {
             }
 
             {
-                error &&  <span className="text-danger">{error}</span>
+                error !== '' &&  <span className="text-danger">{error}</span>
             }
 
         </div>
